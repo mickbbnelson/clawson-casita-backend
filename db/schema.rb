@@ -23,11 +23,8 @@ ActiveRecord::Schema.define(version: 2022_05_18_033228) do
   end
 
   create_table "units", force: :cascade do |t|
-    t.integer "rate"
     t.string "availability"
-    t.string "overview"
-    t.string "reviews"
-    t.string "ratings"
+    t.string "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "title"
